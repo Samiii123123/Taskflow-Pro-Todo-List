@@ -2,8 +2,6 @@
 
 A modern, feature-rich to-do list application built with React, TypeScript, and Tailwind CSS. TaskFlow Pro combines beautiful design with powerful productivity features to help you organize your life and boost your efficiency.
 
-![TaskFlow Pro Screenshot](https://via.placeholder.com/800x400/1e293b/60a5fa?text=TaskFlow+Pro+Dashboard)
-
 ## ✨ Features
 
 ### 🎨 **Beautiful Design**
@@ -190,132 +188,13 @@ Your CSV file can include any of these columns (column names are flexible):
 - **Excel/CSV**: Spreadsheet format with all task data and dates
 - **JSON**: Complete backup including categories and all metadata
 
-## 🎨 Customization
-
-### Adding New Categories
-Edit the \`defaultCategories\` array in \`todo-app.tsx\`:
-
-\`\`\`typescript
-const defaultCategories: Category[] = [
-  { id: "custom", name: "Custom", icon: "🎨", color: "bg-purple-500" },
-  // ... existing categories
-]
-\`\`\`
-
-### Modifying Animations
-The app uses optimized CSS animations with proper property separation:
-
-\`\`\`typescript
-style={{
-  animationName: "fadeInUp",
-  animationDuration: "0.5s", 
-  animationTimingFunction: "ease-out",
-  animationFillMode: "forwards",
-  animationDelay: \`\${index * 50}ms\`,
-}}
-\`\`\`
-
-### Adding New Priority Levels
-Extend the priority type and add corresponding colors:
-
-\`\`\`typescript
-type Priority = "low" | "medium" | "high" | "urgent"
-\`\`\`
-
-## 🔧 Configuration
-
-### Environment Variables
-Create a \`.env.local\` file for any future API integrations:
-
-\`\`\`env
-NEXT_PUBLIC_APP_NAME=TaskFlow Pro
-NEXT_PUBLIC_APP_VERSION=1.0.0
-\`\`\`
-
-### Tailwind Configuration
-The project uses a custom Tailwind configuration optimized for the design system. Modify \`tailwind.config.js\` to customize colors, spacing, and animations.
-
-## 📱 Browser Support
-
-TaskFlow Pro supports all modern browsers:
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
-
 ## 🤝 Contributing
-
-We welcome contributions! Please follow these steps:
 
 1. **Fork the repository**
 2. **Create a feature branch**: \`git checkout -b feature/amazing-feature\`
 3. **Commit your changes**: \`git commit -m 'Add amazing feature'\`
 4. **Push to the branch**: \`git push origin feature/amazing-feature\`
 5. **Open a Pull Request**
-
-### Development Guidelines
-- Follow TypeScript best practices
-- Use meaningful component and variable names
-- Add comments for complex logic
-- Ensure responsive design
-- Test on multiple browsers
-- Follow the existing code style
-- Avoid animation property conflicts
-
-## 🐛 Bug Reports
-
-Found a bug? Please create an issue with:
-- Clear description of the problem
-- Steps to reproduce
-- Expected vs actual behavior
-- Browser and OS information
-- Screenshots if applicable
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **shadcn/ui** for the beautiful component library
-- **Lucide** for the comprehensive icon set
-- **Tailwind CSS** for the utility-first CSS framework
-- **Next.js** team for the amazing React framework
-- **Vercel** for hosting and deployment platform
-
-## 📞 Support
-
-Need help? Reach out through:
-- 📧 Email: support@taskflowpro.com
-- 💬 Discord: [TaskFlow Community](https://discord.gg/taskflow)
-- 🐦 Twitter: [@TaskFlowPro](https://twitter.com/taskflowpro)
-- 📖 Documentation: [docs.taskflowpro.com](https://docs.taskflowpro.com)
-
-## 🗺️ Roadmap
-
-### Version 2.0 (Coming Soon)
-- [ ] **Team Collaboration**: Share tasks with team members
-- [ ] **Cloud Sync**: Sync across devices with cloud storage
-- [ ] **Mobile App**: Native iOS and Android applications
-- [ ] **Integrations**: Connect with Google Calendar, Slack, and more
-- [ ] **Advanced Analytics**: Detailed productivity insights
-- [ ] **Custom Themes**: User-created color schemes
-- [ ] **Subtasks**: Break down complex tasks into smaller steps
-- [ ] **Time Tracking**: Built-in pomodoro timer and time logging
-- [ ] **Notifications**: Desktop and mobile push notifications
-- [ ] **Offline Mode**: Full functionality without internet connection
-
-### Version 2.1
-- [ ] **AI Assistant**: Smart task suggestions and prioritization
-- [ ] **Voice Input**: Add tasks using voice commands
-- [ ] **Habit Tracking**: Track daily habits and routines
-- [ ] **Project Management**: Group tasks into projects
-- [ ] **Calendar View**: Visual calendar interface
-- [ ] **Recurring Tasks**: Set up repeating tasks
-- [ ] **File Attachments**: Attach files and images to tasks
-- [ ] **Advanced Search**: Filters, saved searches, and smart queries
-
----
 
 **© 2024 TaskFlow Pro. All rights reserved.**
 
